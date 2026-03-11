@@ -1,0 +1,54 @@
+{
+  "id": "FG-IR-26-084",
+  "title": "Path traversal vulnerability in FortiSOAR Agent Connector Bridge server",
+  "summary": "An Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability [CWE-22] in FortiSOAR Agent Connector Bridge may allow an unauthenticated attacker to read files accessible to the fortisoar user on the system where the agent is deployed, via sending a crafted request to the agent port.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-26-084",
+      "cve": "CVE-2025-54659",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiSOAR Agent Communication Bridge: greater equal 1.0.0, less equal 1.0.2, fixed in [1.1.1]",
+                  "cpe": "cpe:2.3:a:fortinet:fortisoar_agent_communication_bridge:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "1.0.0",
+                    "le": "1.0.2"
+                  },
+                  "fixed_in": [
+                    "1.1.1"
+                  ]
+                },
+                {
+                  "description": "FortiSOAR Agent Communication Bridge: equal 1.1.0, fixed in [1.1.1]",
+                  "cpe": "cpe:2.3:a:fortinet:fortisoar_agent_communication_bridge:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "1.1.0"
+                  },
+                  "fixed_in": [
+                    "1.1.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 5.5,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:N/A:N/E:F/RL:X/RC:R"
+          },
+          "cwe": [
+            "CWE-22"
+          ],
+          "impact": "Information disclosure"
+        }
+      ]
+    }
+  ],
+  "published": "2026-03-10T00:00:00Z",
+  "updated": "2026-03-10T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-26-084"
+}
+

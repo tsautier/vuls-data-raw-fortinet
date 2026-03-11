@@ -1,0 +1,98 @@
+{
+  "id": "FG-IR-26-082",
+  "title": "Authentication rate-limit bypass permits to brute force admin logins",
+  "summary": "An Improper Control of Interaction Frequency vulnerability [CWE-799] in FortiWeb may allow a remote unauthenticated attacker to bypass the authentication rate-limit via crafted requests. The success of the attack depends on the attacker's resources and the password target complexity.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-26-082",
+      "cve": "CVE-2026-24017",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiWeb: greater equal 7.0.0, less equal 7.0.11, fixed in [7.0.12, 7.2.12, 7.4.11, 7.6.6, 8.0.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.11"
+                  },
+                  "fixed_in": [
+                    "7.0.12",
+                    "7.2.12",
+                    "7.4.11",
+                    "7.6.6",
+                    "8.0.3"
+                  ]
+                },
+                {
+                  "description": "FortiWeb: greater equal 7.2.0, less equal 7.2.11, fixed in [7.2.12, 7.4.11, 7.6.6, 8.0.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.11"
+                  },
+                  "fixed_in": [
+                    "7.2.12",
+                    "7.4.11",
+                    "7.6.6",
+                    "8.0.3"
+                  ]
+                },
+                {
+                  "description": "FortiWeb: greater equal 7.4.0, less equal 7.4.10, fixed in [7.4.11, 7.6.6, 8.0.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.10"
+                  },
+                  "fixed_in": [
+                    "7.4.11",
+                    "7.6.6",
+                    "8.0.3"
+                  ]
+                },
+                {
+                  "description": "FortiWeb: greater equal 7.6.0, less equal 7.6.5, fixed in [7.6.6, 8.0.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.6.0",
+                    "le": "7.6.5"
+                  },
+                  "fixed_in": [
+                    "7.6.6",
+                    "8.0.3"
+                  ]
+                },
+                {
+                  "description": "FortiWeb: greater equal 8.0.0, less equal 8.0.2, fixed in [8.0.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "8.0.0",
+                    "le": "8.0.2"
+                  },
+                  "fixed_in": [
+                    "8.0.3"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 7.3,
+            "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C"
+          },
+          "cwe": [
+            "CWE-799"
+          ],
+          "impact": "Improper access control"
+        }
+      ]
+    }
+  ],
+  "published": "2026-03-10T00:00:00Z",
+  "updated": "2026-03-10T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-26-082"
+}
+

@@ -1,0 +1,44 @@
+{
+  "id": "FG-IR-26-086",
+  "title": "Buffer Overflow in LLDP OUI field",
+  "summary": "A Buffer Copy without Checking Size of Input ('Classic Buffer Overflow') vulnerability [CWE-120] in FortiSwitchAXFixed may allow an unauthenticated attacker within the same adjacent network to execute unauthorized code or commands on the device via sending a crafted LLDP packet.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-26-086",
+      "cve": "CVE-2026-22627",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiSwitchAXFixed: greater equal 1.0.0, less equal 1.0.1, fixed in [1.0.2]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiswitchaxfixed:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "1.0.0",
+                    "le": "1.0.1"
+                  },
+                  "fixed_in": [
+                    "1.0.2"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 7.7,
+            "vector": "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C"
+          },
+          "cwe": [
+            "CWE-120"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2026-03-10T00:00:00Z",
+  "updated": "2026-03-10T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-26-086"
+}
+

@@ -1,0 +1,43 @@
+{
+  "id": "FG-IR-26-096",
+  "title": "OS command injection on vmimages update feature",
+  "summary": "An Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability [CWE-78] in FortiSandbox Cloud WEB UI may allow a privileged attacker with super-admin profile and CLI access to execute unauthorized code or commands via crafted HTTP requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-26-096",
+      "cve": "CVE-2026-25836",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiSandbox Cloud: equal 5.0.4, fixed in [5.0.5]",
+                  "cpe": "cpe:2.3:a:fortinet:fortisandbox_cloud:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "5.0.4"
+                  },
+                  "fixed_in": [
+                    "5.0.5"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 6.7,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C"
+          },
+          "cwe": [
+            "CWE-78"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2026-03-10T00:00:00Z",
+  "updated": "2026-03-10T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-26-096"
+}
+

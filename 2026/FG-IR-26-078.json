@@ -1,0 +1,155 @@
+{
+  "id": "FG-IR-26-078",
+  "title": "Lack of TLS Certificate Validation during initial SSO Authentication",
+  "summary": "An improper certificate validation [CWE-295] vulnerability in the FortiManager GUI may allow a remote unauthenticated attacker to view confidential information via a man in the middle [MiTM] attack.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-26-078",
+      "cve": "CVE-2025-68482",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiAnalyzer: greater equal 6.4.0, less equal 6.4.15, fixed in [7.4.9, 7.6.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.4.0",
+                    "le": "6.4.15"
+                  },
+                  "fixed_in": [
+                    "7.4.9",
+                    "7.6.5"
+                  ]
+                },
+                {
+                  "description": "FortiAnalyzer: greater equal 7.0.0, less equal 7.0.16, fixed in [7.4.9, 7.6.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.16"
+                  },
+                  "fixed_in": [
+                    "7.4.9",
+                    "7.6.5"
+                  ]
+                },
+                {
+                  "description": "FortiAnalyzer: greater equal 7.2.0, less equal 7.2.12, fixed in [7.4.9, 7.6.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.12"
+                  },
+                  "fixed_in": [
+                    "7.4.9",
+                    "7.6.5"
+                  ]
+                },
+                {
+                  "description": "FortiAnalyzer: greater equal 7.4.0, less equal 7.4.8, fixed in [7.4.9, 7.6.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.8"
+                  },
+                  "fixed_in": [
+                    "7.4.9",
+                    "7.6.5"
+                  ]
+                },
+                {
+                  "description": "FortiAnalyzer: greater equal 7.6.0, less equal 7.6.4, fixed in [7.6.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.6.0",
+                    "le": "7.6.4"
+                  },
+                  "fixed_in": [
+                    "7.6.5"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiManager: greater equal 6.4.0, less equal 6.4.15, fixed in [7.4.9, 7.6.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.4.0",
+                    "le": "6.4.15"
+                  },
+                  "fixed_in": [
+                    "7.4.9",
+                    "7.6.5"
+                  ]
+                },
+                {
+                  "description": "FortiManager: greater equal 7.0.0, less equal 7.0.16, fixed in [7.4.9, 7.6.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.16"
+                  },
+                  "fixed_in": [
+                    "7.4.9",
+                    "7.6.5"
+                  ]
+                },
+                {
+                  "description": "FortiManager: greater equal 7.2.0, less equal 7.2.12, fixed in [7.4.9, 7.6.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.12"
+                  },
+                  "fixed_in": [
+                    "7.4.9",
+                    "7.6.5"
+                  ]
+                },
+                {
+                  "description": "FortiManager: greater equal 7.4.0, less equal 7.4.8, fixed in [7.4.9, 7.6.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.8"
+                  },
+                  "fixed_in": [
+                    "7.4.9",
+                    "7.6.5"
+                  ]
+                },
+                {
+                  "description": "FortiManager: greater equal 7.6.0, less equal 7.6.4, fixed in [7.6.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.6.0",
+                    "le": "7.6.4"
+                  },
+                  "fixed_in": [
+                    "7.6.5"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 6.3,
+            "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:H/I:L/A:N/E:P/RL:W/RC:C"
+          },
+          "cwe": [
+            "CWE-295"
+          ],
+          "impact": "Information disclosure"
+        }
+      ]
+    }
+  ],
+  "published": "2026-03-10T00:00:00Z",
+  "updated": "2026-03-10T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-26-078"
+}
+

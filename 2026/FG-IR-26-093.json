@@ -1,0 +1,95 @@
+{
+  "id": "FG-IR-26-093",
+  "title": "Stack buffer overflow in API",
+  "summary": "A Stack-based Buffer Overflow vulnerability [CWE-121] in FortiWeb may allow a remote authenticated attacker who can bypass stack protection and ASLR to execute arbitrary code or commands via crafted HTTP requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-26-093",
+      "cve": "CVE-2026-30897",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiWeb: greater equal 7.0.0, less equal 7.0.12, fixed in [7.4.12, 7.6.7, 8.0.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.12"
+                  },
+                  "fixed_in": [
+                    "7.4.12",
+                    "7.6.7",
+                    "8.0.4"
+                  ]
+                },
+                {
+                  "description": "FortiWeb: greater equal 7.2.0, less equal 7.2.12, fixed in [7.4.12, 7.6.7, 8.0.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.12"
+                  },
+                  "fixed_in": [
+                    "7.4.12",
+                    "7.6.7",
+                    "8.0.4"
+                  ]
+                },
+                {
+                  "description": "FortiWeb: greater equal 7.4.0, less equal 7.4.11, fixed in [7.4.12, 7.6.7, 8.0.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.11"
+                  },
+                  "fixed_in": [
+                    "7.4.12",
+                    "7.6.7",
+                    "8.0.4"
+                  ]
+                },
+                {
+                  "description": "FortiWeb: greater equal 7.6.0, less equal 7.6.6, fixed in [7.6.7, 8.0.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.6.0",
+                    "le": "7.6.6"
+                  },
+                  "fixed_in": [
+                    "7.6.7",
+                    "8.0.4"
+                  ]
+                },
+                {
+                  "description": "FortiWeb: greater equal 8.0.0, less equal 8.0.3, fixed in [8.0.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "8.0.0",
+                    "le": "8.0.3"
+                  },
+                  "fixed_in": [
+                    "8.0.4"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 5.9,
+            "vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C"
+          },
+          "cwe": [
+            "CWE-121"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2026-03-10T00:00:00Z",
+  "updated": "2026-03-10T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-26-093"
+}
+

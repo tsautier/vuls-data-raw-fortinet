@@ -1,0 +1,98 @@
+{
+  "id": "FG-IR-26-088",
+  "title": "OS Command injection in FortiWeb API",
+  "summary": "An OS Command Injection vulnerability [CWE-78] in FortiWeb API may allow an authenticated attacked to execute arbitrary commands via a specialy crafted HTTP request.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-26-088",
+      "cve": "CVE-2025-66178",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiWeb: greater equal 7.0.0, less equal 7.0.12, fixed in [7.0.13, 7.2.13, 7.4.12, 7.6.7, 8.0.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.12"
+                  },
+                  "fixed_in": [
+                    "7.0.13",
+                    "7.2.13",
+                    "7.4.12",
+                    "7.6.7",
+                    "8.0.3"
+                  ]
+                },
+                {
+                  "description": "FortiWeb: greater equal 7.2.0, less equal 7.2.12, fixed in [7.2.13, 7.4.12, 7.6.7, 8.0.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.12"
+                  },
+                  "fixed_in": [
+                    "7.2.13",
+                    "7.4.12",
+                    "7.6.7",
+                    "8.0.3"
+                  ]
+                },
+                {
+                  "description": "FortiWeb: greater equal 7.4.0, less equal 7.4.11, fixed in [7.4.12, 7.6.7, 8.0.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.11"
+                  },
+                  "fixed_in": [
+                    "7.4.12",
+                    "7.6.7",
+                    "8.0.3"
+                  ]
+                },
+                {
+                  "description": "FortiWeb: greater equal 7.6.0, less equal 7.6.5, fixed in [7.6.7, 8.0.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.6.0",
+                    "le": "7.6.5"
+                  },
+                  "fixed_in": [
+                    "7.6.7",
+                    "8.0.3"
+                  ]
+                },
+                {
+                  "description": "FortiWeb: greater equal 8.0.0, less equal 8.0.1, fixed in [8.0.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "8.0.0",
+                    "le": "8.0.1"
+                  },
+                  "fixed_in": [
+                    "8.0.3"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 6.7,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C"
+          },
+          "cwe": [
+            "CWE-78"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2026-03-10T00:00:00Z",
+  "updated": "2026-03-10T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-26-088"
+}
+

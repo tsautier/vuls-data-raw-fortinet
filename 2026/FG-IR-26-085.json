@@ -1,0 +1,44 @@
+{
+  "id": "FG-IR-26-085",
+  "title": "shell command limitation bypass by SSH local config overriding",
+  "summary": "An Improper Access Control vulnerability [CWE-284] in FortiSwitchAXFixed may allow an authenticated admin to execute system commands via a specifically crafted SSH config file.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-26-085",
+      "cve": "CVE-2026-22628",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiSwitchAXFixed: greater equal 1.0.0, less equal 1.0.1, fixed in [1.0.2]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiswitchaxfixed:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "1.0.0",
+                    "le": "1.0.1"
+                  },
+                  "fixed_in": [
+                    "1.0.2"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 5.1,
+            "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L/E:X/RL:O/RC:C"
+          },
+          "cwe": [
+            "CWE-284"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2026-03-10T00:00:00Z",
+  "updated": "2026-03-10T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-26-085"
+}
+

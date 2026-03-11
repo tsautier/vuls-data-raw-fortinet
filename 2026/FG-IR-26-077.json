@@ -1,0 +1,55 @@
+{
+  "id": "FG-IR-26-077",
+  "title": "Reflected Cross Site Scripting (XSS) in error page",
+  "summary": "An Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') [CWE-79] in FortiSIEM's error page may allow a remote unauthenticated attacker to provide arbitrary data enabling a social engineering attack via spoofed URL parameters.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-26-077",
+      "cve": "CVE-2026-25972",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiSIEM: greater equal 7.3.0, less equal 7.3.4, fixed in [7.3.5, 7.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisiem:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.3.0",
+                    "le": "7.3.4"
+                  },
+                  "fixed_in": [
+                    "7.3.5",
+                    "7.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiSIEM: equal 7.4.0, fixed in [7.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisiem:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "7.4.0"
+                  },
+                  "fixed_in": [
+                    "7.4.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 4.1,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N/E:P/RL:U/RC:C"
+          },
+          "cwe": [
+            "CWE-79"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2026-03-10T00:00:00Z",
+  "updated": "2026-03-10T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-26-077"
+}
+

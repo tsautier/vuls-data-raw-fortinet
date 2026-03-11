@@ -1,0 +1,142 @@
+{
+  "id": "FG-IR-26-094",
+  "title": "Arbitrary file deletion in administrative interface",
+  "summary": "An Improper Neutralization of Argument Delimiters in a Command ('Argument Injection') vulnerability [CWE-88] in FortiDeceptor WEBUI may allow a privileged attacker with super-admin profile and CLI access to delete sensitive files via crafted HTTP requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-26-094",
+      "cve": "CVE-2026-25689",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiDeceptor: greater equal 4.0.0, less equal 4.0.2, fixed in [6.2.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortideceptor:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.0.0",
+                    "le": "4.0.2"
+                  },
+                  "fixed_in": [
+                    "6.2.1"
+                  ]
+                },
+                {
+                  "description": "FortiDeceptor: greater equal 4.1.0, less equal 4.1.1, fixed in [6.2.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortideceptor:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.1.0",
+                    "le": "4.1.1"
+                  },
+                  "fixed_in": [
+                    "6.2.1"
+                  ]
+                },
+                {
+                  "description": "FortiDeceptor: greater equal 4.2.0, less equal 4.2.0, fixed in [6.2.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortideceptor:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.2.0",
+                    "le": "4.2.0"
+                  },
+                  "fixed_in": [
+                    "6.2.1"
+                  ]
+                },
+                {
+                  "description": "FortiDeceptor: greater equal 4.3.0, less equal 4.3.0, fixed in [6.2.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortideceptor:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.3.0",
+                    "le": "4.3.0"
+                  },
+                  "fixed_in": [
+                    "6.2.1"
+                  ]
+                },
+                {
+                  "description": "FortiDeceptor: greater equal 5.0.0, less equal 5.0.0, fixed in [6.2.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortideceptor:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.0.0",
+                    "le": "5.0.0"
+                  },
+                  "fixed_in": [
+                    "6.2.1"
+                  ]
+                },
+                {
+                  "description": "FortiDeceptor: greater equal 5.1.0, less equal 5.1.0, fixed in [6.2.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortideceptor:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.1.0",
+                    "le": "5.1.0"
+                  },
+                  "fixed_in": [
+                    "6.2.1"
+                  ]
+                },
+                {
+                  "description": "FortiDeceptor: greater equal 5.2.0, less equal 5.2.2, fixed in [6.2.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortideceptor:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.2.0",
+                    "le": "5.2.2"
+                  },
+                  "fixed_in": [
+                    "6.2.1"
+                  ]
+                },
+                {
+                  "description": "FortiDeceptor: greater equal 5.3.0, less equal 5.3.4, fixed in [6.2.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortideceptor:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.3.0",
+                    "le": "5.3.4"
+                  },
+                  "fixed_in": [
+                    "6.2.1"
+                  ]
+                },
+                {
+                  "description": "FortiDeceptor: greater equal 6.0.0, less equal 6.0.3, fixed in [6.2.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortideceptor:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.0.0",
+                    "le": "6.0.3"
+                  },
+                  "fixed_in": [
+                    "6.2.1"
+                  ]
+                },
+                {
+                  "description": "FortiDeceptor: equal 6.2.0, fixed in [6.2.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortideceptor:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "6.2.0"
+                  },
+                  "fixed_in": [
+                    "6.2.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 6,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:H/A:H/E:F/RL:O/RC:C"
+          },
+          "cwe": [
+            "CWE-88"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2026-03-10T00:00:00Z",
+  "updated": "2026-03-10T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-26-094"
+}
+

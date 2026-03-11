@@ -1,0 +1,233 @@
+{
+  "id": "FG-IR-26-092",
+  "title": "Format string vulnerability in fazsvcd",
+  "summary": "A use of externally-controlled format string vulnerability [CWE-134] in FortiAnalyzer, FortiAnalyzer Cloud, FortiManager and FortiManager Cloud fazsvcd daemon may allow a remote privileged attacker with admin profile to execute arbitrary code or commands via specially crafted requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-26-092",
+      "cve": "CVE-2025-68648",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiAnalyzer: greater equal 7.0.0, less equal 7.0.16, fixed in [7.4.8, 7.6.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.16"
+                  },
+                  "fixed_in": [
+                    "7.4.8",
+                    "7.6.5"
+                  ]
+                },
+                {
+                  "description": "FortiAnalyzer: greater equal 7.2.0, less equal 7.2.12, fixed in [7.4.8, 7.6.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.12"
+                  },
+                  "fixed_in": [
+                    "7.4.8",
+                    "7.6.5"
+                  ]
+                },
+                {
+                  "description": "FortiAnalyzer: greater equal 7.4.0, less equal 7.4.7, fixed in [7.4.8, 7.6.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.7"
+                  },
+                  "fixed_in": [
+                    "7.4.8",
+                    "7.6.5"
+                  ]
+                },
+                {
+                  "description": "FortiAnalyzer: greater equal 7.6.0, less equal 7.6.4, fixed in [7.6.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.6.0",
+                    "le": "7.6.4"
+                  },
+                  "fixed_in": [
+                    "7.6.5"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiAnalyzer Cloud: greater equal 7.0.1, less equal 7.0.15, fixed in [7.4.8, 7.6.5]",
+                  "cpe": "cpe:2.3:a:fortinet:fortianalyzer_cloud:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.1",
+                    "le": "7.0.15"
+                  },
+                  "fixed_in": [
+                    "7.4.8",
+                    "7.6.5"
+                  ]
+                },
+                {
+                  "description": "FortiAnalyzer Cloud: greater equal 7.2.1, less equal 7.2.12, fixed in [7.4.8, 7.6.5]",
+                  "cpe": "cpe:2.3:a:fortinet:fortianalyzer_cloud:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.1",
+                    "le": "7.2.12"
+                  },
+                  "fixed_in": [
+                    "7.4.8",
+                    "7.6.5"
+                  ]
+                },
+                {
+                  "description": "FortiAnalyzer Cloud: greater equal 7.4.0, less equal 7.4.7, fixed in [7.4.8, 7.6.5]",
+                  "cpe": "cpe:2.3:a:fortinet:fortianalyzer_cloud:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.7"
+                  },
+                  "fixed_in": [
+                    "7.4.8",
+                    "7.6.5"
+                  ]
+                },
+                {
+                  "description": "FortiAnalyzer Cloud: greater equal 7.6.0, less equal 7.6.4, fixed in [7.6.5]",
+                  "cpe": "cpe:2.3:a:fortinet:fortianalyzer_cloud:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.6.0",
+                    "le": "7.6.4"
+                  },
+                  "fixed_in": [
+                    "7.6.5"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiManager: greater equal 7.0.0, less equal 7.0.16, fixed in [7.4.8, 7.6.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.16"
+                  },
+                  "fixed_in": [
+                    "7.4.8",
+                    "7.6.5"
+                  ]
+                },
+                {
+                  "description": "FortiManager: greater equal 7.2.0, less equal 7.2.12, fixed in [7.4.8, 7.6.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.12"
+                  },
+                  "fixed_in": [
+                    "7.4.8",
+                    "7.6.5"
+                  ]
+                },
+                {
+                  "description": "FortiManager: greater equal 7.4.0, less equal 7.4.7, fixed in [7.4.8, 7.6.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.7"
+                  },
+                  "fixed_in": [
+                    "7.4.8",
+                    "7.6.5"
+                  ]
+                },
+                {
+                  "description": "FortiManager: greater equal 7.6.0, less equal 7.6.4, fixed in [7.6.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.6.0",
+                    "le": "7.6.4"
+                  },
+                  "fixed_in": [
+                    "7.6.5"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiManager Cloud: greater equal 7.0.1, less equal 7.0.14, fixed in [7.4.8, 7.6.5]",
+                  "cpe": "cpe:2.3:a:fortinet:fortimanager_cloud:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.1",
+                    "le": "7.0.14"
+                  },
+                  "fixed_in": [
+                    "7.4.8",
+                    "7.6.5"
+                  ]
+                },
+                {
+                  "description": "FortiManager Cloud: greater equal 7.2.1, less equal 7.2.10, fixed in [7.4.8, 7.6.5]",
+                  "cpe": "cpe:2.3:a:fortinet:fortimanager_cloud:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.1",
+                    "le": "7.2.10"
+                  },
+                  "fixed_in": [
+                    "7.4.8",
+                    "7.6.5"
+                  ]
+                },
+                {
+                  "description": "FortiManager Cloud: greater equal 7.4.0, less equal 7.4.7, fixed in [7.4.8, 7.6.5]",
+                  "cpe": "cpe:2.3:a:fortinet:fortimanager_cloud:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.7"
+                  },
+                  "fixed_in": [
+                    "7.4.8",
+                    "7.6.5"
+                  ]
+                },
+                {
+                  "description": "FortiManager Cloud: greater equal 7.6.0, less equal 7.6.4, fixed in [7.6.5]",
+                  "cpe": "cpe:2.3:a:fortinet:fortimanager_cloud:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.6.0",
+                    "le": "7.6.4"
+                  },
+                  "fixed_in": [
+                    "7.6.5"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 6.5,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C"
+          },
+          "cwe": [
+            "CWE-134"
+          ],
+          "impact": "Escalation of privilege"
+        }
+      ]
+    }
+  ],
+  "published": "2026-03-10T00:00:00Z",
+  "updated": "2026-03-10T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-26-092"
+}
+

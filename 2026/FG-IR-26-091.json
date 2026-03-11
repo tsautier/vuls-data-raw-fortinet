@@ -1,0 +1,80 @@
+{
+  "id": "FG-IR-26-091",
+  "title": "XSS in LDAP server option",
+  "summary": "An Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability [CWE-79] in FortiSandbox LDAP Server feature may allow an authenticated privileged attacker to execute code via crafted requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-26-091",
+      "cve": "CVE-2025-53608",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiSandbox: greater equal 4.0.0, less equal 4.0.6, fixed in [4.4.8, 5.0.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.0.0",
+                    "le": "4.0.6"
+                  },
+                  "fixed_in": [
+                    "4.4.8",
+                    "5.0.3"
+                  ]
+                },
+                {
+                  "description": "FortiSandbox: greater equal 4.2.0, less equal 4.2.8, fixed in [4.4.8, 5.0.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.2.0",
+                    "le": "4.2.8"
+                  },
+                  "fixed_in": [
+                    "4.4.8",
+                    "5.0.3"
+                  ]
+                },
+                {
+                  "description": "FortiSandbox: greater equal 4.4.0, less equal 4.4.7, fixed in [4.4.8, 5.0.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.4.0",
+                    "le": "4.4.7"
+                  },
+                  "fixed_in": [
+                    "4.4.8",
+                    "5.0.3"
+                  ]
+                },
+                {
+                  "description": "FortiSandbox: greater equal 5.0.0, less equal 5.0.2, fixed in [5.0.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.0.0",
+                    "le": "5.0.2"
+                  },
+                  "fixed_in": [
+                    "5.0.3"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 4.6,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:L/I:L/A:N/E:P/RL:X/RC:C"
+          },
+          "cwe": [
+            "CWE-79"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2026-03-10T00:00:00Z",
+  "updated": "2026-03-10T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-26-091"
+}
+

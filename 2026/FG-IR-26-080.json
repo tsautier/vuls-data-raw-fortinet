@@ -1,0 +1,146 @@
+{
+  "id": "FG-IR-26-080",
+  "title": "Insecure Exposure of Plaintext Passwords in Debug Logs",
+  "summary": "A Cleartext Storage of Sensitive Information vulnerability [CWE-312] in FortiMail, FortiVoice and FortiRecorder debug logs may allow an authenticated malicious administrator to obtain user's secrets via CLI commands.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-26-080",
+      "cve": "CVE-2025-55717",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiMail: greater equal 7.0.0, less equal 7.0.8, fixed in [7.0.9, 7.2.8, 7.4.5, 7.6.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimail:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.8"
+                  },
+                  "fixed_in": [
+                    "7.0.9",
+                    "7.2.8",
+                    "7.4.5",
+                    "7.6.3"
+                  ]
+                },
+                {
+                  "description": "FortiMail: greater equal 7.2.0, less equal 7.2.7, fixed in [7.2.8, 7.4.5, 7.6.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimail:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.7"
+                  },
+                  "fixed_in": [
+                    "7.2.8",
+                    "7.4.5",
+                    "7.6.3"
+                  ]
+                },
+                {
+                  "description": "FortiMail: greater equal 7.4.0, less equal 7.4.4, fixed in [7.4.5, 7.6.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimail:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.4"
+                  },
+                  "fixed_in": [
+                    "7.4.5",
+                    "7.6.3"
+                  ]
+                },
+                {
+                  "description": "FortiMail: greater equal 7.6.0, less equal 7.6.2, fixed in [7.6.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimail:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.6.0",
+                    "le": "7.6.2"
+                  },
+                  "fixed_in": [
+                    "7.6.3"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiRecorder: greater equal 6.4.0, less equal 6.4.6, fixed in [7.2.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortirecorder:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.4.0",
+                    "le": "6.4.6"
+                  },
+                  "fixed_in": [
+                    "7.2.4"
+                  ]
+                },
+                {
+                  "description": "FortiRecorder: greater equal 7.0.0, less equal 7.0.6, fixed in [7.2.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortirecorder:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.6"
+                  },
+                  "fixed_in": [
+                    "7.2.4"
+                  ]
+                },
+                {
+                  "description": "FortiRecorder: greater equal 7.2.0, less equal 7.2.3, fixed in [7.2.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortirecorder:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.3"
+                  },
+                  "fixed_in": [
+                    "7.2.4"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiVoice: greater equal 7.0.0, less equal 7.0.6, fixed in [7.0.7, 7.2.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortivoice:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.6"
+                  },
+                  "fixed_in": [
+                    "7.0.7",
+                    "7.2.1"
+                  ]
+                },
+                {
+                  "description": "FortiVoice: equal 7.2.0, fixed in [7.2.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortivoice:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "7.2.0"
+                  },
+                  "fixed_in": [
+                    "7.2.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 3.8,
+            "vector": "CVSS:3.1/AV:L/AC:H/PR:H/UI:R/S:U/C:H/I:N/A:N/E:P/RL:X/RC:C"
+          },
+          "cwe": [
+            "CWE-312"
+          ],
+          "impact": "Information disclosure"
+        }
+      ]
+    }
+  ],
+  "published": "2026-03-10T00:00:00Z",
+  "updated": "2026-03-10T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-26-080"
+}
+
