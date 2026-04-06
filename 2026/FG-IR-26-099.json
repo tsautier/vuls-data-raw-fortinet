@@ -1,0 +1,44 @@
+{
+  "id": "FG-IR-26-099",
+  "title": "API authentication and authorization bypass",
+  "summary": "An Improper Access Control vulnerability [CWE-284] in FortiClient EMS may allow an unauthenticated attacker to execute unauthorized code or commands via crafted requests.Fortinet has observed this to be exploited in the wild and urges vulnerable customers to install the hotfix for FortiClient EMS 7.4.5 and 7.4.6, by following the instructions at:https://docs.fortinet.com/document/forticlient/7.4.5/ems-release-notes/832484 - for FortiClientEMS 7.4.5https://docs.fortinet.com/document/forticlient/7.4.6/ems-release-notes/832484 - for FortiClientEMS 7.4.6Upcoming FortiClientEMS 7.4.7 will also include a fix for this issue. In the meantime the hotfix above is sufficient to prevent it entirely.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-26-099",
+      "cve": "CVE-2026-35616",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiClientEMS: greater equal 7.4.5, less equal 7.4.6, fixed in [7.4.7]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient_enterprise_management_server:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.5",
+                    "le": "7.4.6"
+                  },
+                  "fixed_in": [
+                    "7.4.7"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 9.1,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C"
+          },
+          "cwe": [
+            "CWE-284"
+          ],
+          "impact": "Escalation of privilege"
+        }
+      ]
+    }
+  ],
+  "published": "2026-04-04T00:00:00Z",
+  "updated": "2026-04-04T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-26-099"
+}
+
