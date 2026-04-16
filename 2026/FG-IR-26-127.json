@@ -1,0 +1,69 @@
+{
+  "id": "FG-IR-26-127",
+  "title": "Out-Of-Bounds Write in administrative interface",
+  "summary": "An out-of-bounds write vulnerability [CWE-787] in FortiWeb CGI daemon may allow a remote privileged attacker to execute arbitrary code or command via crafted HTTP requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-26-127",
+      "cve": "CVE-2026-40688",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiWeb: greater equal 7.4.0, less equal 7.4.11, fixed in [7.4.12, 7.6.7, 8.0.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.11"
+                  },
+                  "fixed_in": [
+                    "7.4.12",
+                    "7.6.7",
+                    "8.0.4"
+                  ]
+                },
+                {
+                  "description": "FortiWeb: greater equal 7.6.0, less equal 7.6.6, fixed in [7.6.7, 8.0.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.6.0",
+                    "le": "7.6.6"
+                  },
+                  "fixed_in": [
+                    "7.6.7",
+                    "8.0.4"
+                  ]
+                },
+                {
+                  "description": "FortiWeb: greater equal 8.0.0, less equal 8.0.3, fixed in [8.0.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "8.0.0",
+                    "le": "8.0.3"
+                  },
+                  "fixed_in": [
+                    "8.0.4"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 6.7,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C"
+          },
+          "cwe": [
+            "CWE-787"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2026-04-15T00:00:00Z",
+  "updated": "2026-04-15T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-26-127"
+}
+
