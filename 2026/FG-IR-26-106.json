@@ -1,0 +1,251 @@
+{
+  "id": "FG-IR-26-106",
+  "title": "Cleartext Credentials in response for API endpoints",
+  "summary": "A Cleartext Transmission of Sensitive Information vulnerability [CWE-319] in FortiSOAR may allow an authenticated attacker to view cleartext password in response for Secure Message Exchange and Radius queries, if configured",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-26-106",
+      "cve": "CVE-2026-21742",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiSOAR PaaS: greater equal 7.3.0, less equal 7.3.3, fixed in [7.5.3, 7.6.4]",
+                  "cpe": "cpe:2.3:a:fortinet:fortisoar:*:*:paas:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.3.0",
+                    "le": "7.3.3"
+                  },
+                  "fixed_in": [
+                    "7.5.3",
+                    "7.6.4"
+                  ]
+                },
+                {
+                  "description": "FortiSOAR PaaS: greater equal 7.4.0, less equal 7.4.5, fixed in [7.5.3, 7.6.4]",
+                  "cpe": "cpe:2.3:a:fortinet:fortisoar:*:*:paas:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.5"
+                  },
+                  "fixed_in": [
+                    "7.5.3",
+                    "7.6.4"
+                  ]
+                },
+                {
+                  "description": "FortiSOAR PaaS: greater equal 7.5.0, less equal 7.5.2, fixed in [7.5.3, 7.6.4]",
+                  "cpe": "cpe:2.3:a:fortinet:fortisoar:*:*:paas:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.5.0",
+                    "le": "7.5.2"
+                  },
+                  "fixed_in": [
+                    "7.5.3",
+                    "7.6.4"
+                  ]
+                },
+                {
+                  "description": "FortiSOAR PaaS: greater equal 7.6.0, less equal 7.6.3, fixed in [7.6.4]",
+                  "cpe": "cpe:2.3:a:fortinet:fortisoar:*:*:paas:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.6.0",
+                    "le": "7.6.3"
+                  },
+                  "fixed_in": [
+                    "7.6.4"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiSOAR on-premise: greater equal 7.3.0, less equal 7.3.3, fixed in [7.5.3, 7.6.4]",
+                  "cpe": "cpe:2.3:a:fortinet:fortisoar:*:*:on-premise:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.3.0",
+                    "le": "7.3.3"
+                  },
+                  "fixed_in": [
+                    "7.5.3",
+                    "7.6.4"
+                  ]
+                },
+                {
+                  "description": "FortiSOAR on-premise: greater equal 7.4.0, less equal 7.4.5, fixed in [7.5.3, 7.6.4]",
+                  "cpe": "cpe:2.3:a:fortinet:fortisoar:*:*:on-premise:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.5"
+                  },
+                  "fixed_in": [
+                    "7.5.3",
+                    "7.6.4"
+                  ]
+                },
+                {
+                  "description": "FortiSOAR on-premise: greater equal 7.5.0, less equal 7.5.1, fixed in [7.5.3, 7.6.4]",
+                  "cpe": "cpe:2.3:a:fortinet:fortisoar:*:*:on-premise:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.5.0",
+                    "le": "7.5.1"
+                  },
+                  "fixed_in": [
+                    "7.5.3",
+                    "7.6.4"
+                  ]
+                },
+                {
+                  "description": "FortiSOAR on-premise: greater equal 7.6.0, less equal 7.6.2, fixed in [7.6.4]",
+                  "cpe": "cpe:2.3:a:fortinet:fortisoar:*:*:on-premise:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.6.0",
+                    "le": "7.6.2"
+                  },
+                  "fixed_in": [
+                    "7.6.4"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 6.2,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N/E:P/RL:O/RC:C"
+          },
+          "cwe": [
+            "CWE-319"
+          ],
+          "impact": "Information disclosure"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-26-106",
+      "cve": "CVE-2026-22155",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiSOAR PaaS: greater equal 7.3.0, less equal 7.3.3, fixed in [7.5.3, 7.6.4]",
+                  "cpe": "cpe:2.3:a:fortinet:fortisoar:*:*:paas:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.3.0",
+                    "le": "7.3.3"
+                  },
+                  "fixed_in": [
+                    "7.5.3",
+                    "7.6.4"
+                  ]
+                },
+                {
+                  "description": "FortiSOAR PaaS: greater equal 7.4.0, less equal 7.4.5, fixed in [7.5.3, 7.6.4]",
+                  "cpe": "cpe:2.3:a:fortinet:fortisoar:*:*:paas:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.5"
+                  },
+                  "fixed_in": [
+                    "7.5.3",
+                    "7.6.4"
+                  ]
+                },
+                {
+                  "description": "FortiSOAR PaaS: greater equal 7.5.0, less equal 7.5.2, fixed in [7.5.3, 7.6.4]",
+                  "cpe": "cpe:2.3:a:fortinet:fortisoar:*:*:paas:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.5.0",
+                    "le": "7.5.2"
+                  },
+                  "fixed_in": [
+                    "7.5.3",
+                    "7.6.4"
+                  ]
+                },
+                {
+                  "description": "FortiSOAR PaaS: greater equal 7.6.0, less equal 7.6.3, fixed in [7.6.4]",
+                  "cpe": "cpe:2.3:a:fortinet:fortisoar:*:*:paas:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.6.0",
+                    "le": "7.6.3"
+                  },
+                  "fixed_in": [
+                    "7.6.4"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiSOAR on-premise: greater equal 7.3.0, less equal 7.3.3, fixed in [7.5.3, 7.6.4]",
+                  "cpe": "cpe:2.3:a:fortinet:fortisoar:*:*:on-premise:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.3.0",
+                    "le": "7.3.3"
+                  },
+                  "fixed_in": [
+                    "7.5.3",
+                    "7.6.4"
+                  ]
+                },
+                {
+                  "description": "FortiSOAR on-premise: greater equal 7.4.0, less equal 7.4.5, fixed in [7.5.3, 7.6.4]",
+                  "cpe": "cpe:2.3:a:fortinet:fortisoar:*:*:on-premise:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.5"
+                  },
+                  "fixed_in": [
+                    "7.5.3",
+                    "7.6.4"
+                  ]
+                },
+                {
+                  "description": "FortiSOAR on-premise: greater equal 7.5.0, less equal 7.5.1, fixed in [7.5.3, 7.6.4]",
+                  "cpe": "cpe:2.3:a:fortinet:fortisoar:*:*:on-premise:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.5.0",
+                    "le": "7.5.1"
+                  },
+                  "fixed_in": [
+                    "7.5.3",
+                    "7.6.4"
+                  ]
+                },
+                {
+                  "description": "FortiSOAR on-premise: greater equal 7.6.0, less equal 7.6.2, fixed in [7.6.4]",
+                  "cpe": "cpe:2.3:a:fortinet:fortisoar:*:*:on-premise:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.6.0",
+                    "le": "7.6.2"
+                  },
+                  "fixed_in": [
+                    "7.6.4"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 6.2,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N/E:P/RL:O/RC:C"
+          },
+          "cwe": [
+            "CWE-319"
+          ],
+          "impact": "Information disclosure"
+        }
+      ]
+    }
+  ],
+  "published": "2026-04-14T00:00:00Z",
+  "updated": "2026-04-14T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-26-106"
+}
+

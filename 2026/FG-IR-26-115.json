@@ -1,0 +1,96 @@
+{
+  "id": "FG-IR-26-115",
+  "title": "Arbitrary directory delete on vmimages delete feature",
+  "summary": "An Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability [CWE-22] in FortiSandbox, FortiSandbox Cloud, FortiSandbox PaaS and FortiSandbox Cloud WEB UI may allow a privileged attacker with super-admin profile and CLI access to delete an arbitrary directory via HTTP crafted requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-26-115",
+      "cve": "CVE-2026-25691",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiSandbox: greater equal 4.2.1, less equal 4.2.8, fixed in [4.4.9, 5.0.6]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.2.1",
+                    "le": "4.2.8"
+                  },
+                  "fixed_in": [
+                    "4.4.9",
+                    "5.0.6"
+                  ]
+                },
+                {
+                  "description": "FortiSandbox: greater equal 4.4.0, less equal 4.4.8, fixed in [4.4.9, 5.0.6]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.4.0",
+                    "le": "4.4.8"
+                  },
+                  "fixed_in": [
+                    "4.4.9",
+                    "5.0.6"
+                  ]
+                },
+                {
+                  "description": "FortiSandbox: greater equal 5.0.0, less equal 5.0.5, fixed in [5.0.6]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.0.0",
+                    "le": "5.0.5"
+                  },
+                  "fixed_in": [
+                    "5.0.6"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiSandbox Cloud: equal 5.0.4, fixed in [5.0.5]",
+                  "cpe": "cpe:2.3:a:fortinet:fortisandbox_cloud:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "5.0.4"
+                  },
+                  "fixed_in": [
+                    "5.0.5"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiSandbox PaaS: equal 5.0.4, fixed in [5.0.5]",
+                  "cpe": "cpe:2.3:a:fortinet:fortisandbox:*:*:paas:*:*:*:*:*",
+                  "affected": {
+                    "eq": "5.0.4"
+                  },
+                  "fixed_in": [
+                    "5.0.5"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 6.2,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:L/I:H/A:H/E:F/RL:O/RC:C"
+          },
+          "cwe": [
+            "CWE-22"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2026-04-14T00:00:00Z",
+  "updated": "2026-04-14T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-26-115"
+}
+

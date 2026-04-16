@@ -1,0 +1,92 @@
+{
+  "id": "FG-IR-26-114",
+  "title": "Multiple Path traversals in CLI",
+  "summary": "Multiple Relative Path Traversal vulnerabilities [CWE-23] in FortiWeb may allow a local privileged attacker to execute unauthorized code on the underlying system via crafted CLI commands.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-26-114",
+      "cve": "CVE-2026-39814",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiWeb: greater equal 7.0.10, less equal 7.0.12, fixed in [7.6.7, 8.0.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.10",
+                    "le": "7.0.12"
+                  },
+                  "fixed_in": [
+                    "7.6.7",
+                    "8.0.3"
+                  ]
+                },
+                {
+                  "description": "FortiWeb: greater equal 7.2.7, less equal 7.2.12, fixed in [7.6.7, 8.0.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.7",
+                    "le": "7.2.12"
+                  },
+                  "fixed_in": [
+                    "7.6.7",
+                    "8.0.3"
+                  ]
+                },
+                {
+                  "description": "FortiWeb: greater equal 7.4.1, less equal 7.4.12, fixed in [7.6.7, 8.0.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.1",
+                    "le": "7.4.12"
+                  },
+                  "fixed_in": [
+                    "7.6.7",
+                    "8.0.3"
+                  ]
+                },
+                {
+                  "description": "FortiWeb: greater equal 7.6.0, less equal 7.6.6, fixed in [7.6.7, 8.0.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.6.0",
+                    "le": "7.6.6"
+                  },
+                  "fixed_in": [
+                    "7.6.7",
+                    "8.0.3"
+                  ]
+                },
+                {
+                  "description": "FortiWeb: greater equal 8.0.0, less equal 8.0.2, fixed in [8.0.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "8.0.0",
+                    "le": "8.0.2"
+                  },
+                  "fixed_in": [
+                    "8.0.3"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 6.2,
+            "vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C"
+          },
+          "cwe": [
+            "CWE-23"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2026-04-14T00:00:00Z",
+  "updated": "2026-04-14T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-26-114"
+}
+

@@ -1,0 +1,66 @@
+{
+  "id": "FG-IR-26-118",
+  "title": "Open Redirection via Import CSV option",
+  "summary": "An URL Redirection to Untrusted Site ('Open Redirect') vulnerability [CWE-601] in FortiNAC-F may allow a remote privileged attacker with system administrator role to redirect users to an arbitrary website via crafted CSV file.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-26-118",
+      "cve": "CVE-2026-21741",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiNAC-F: greater equal 7.2.0, less equal 7.2.9, fixed in [7.6.6]",
+                  "cpe": "cpe:2.3:o:fortinet:fortinac-f:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.9"
+                  },
+                  "fixed_in": [
+                    "7.6.6"
+                  ]
+                },
+                {
+                  "description": "FortiNAC-F: greater equal 7.4.0, less equal 7.4.3, fixed in [7.6.6]",
+                  "cpe": "cpe:2.3:o:fortinet:fortinac-f:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.3"
+                  },
+                  "fixed_in": [
+                    "7.6.6"
+                  ]
+                },
+                {
+                  "description": "FortiNAC-F: greater equal 7.6.0, less equal 7.6.5, fixed in [7.6.6]",
+                  "cpe": "cpe:2.3:o:fortinet:fortinac-f:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.6.0",
+                    "le": "7.6.5"
+                  },
+                  "fixed_in": [
+                    "7.6.6"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 2.2,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:U/C:N/I:L/A:N/E:P/RL:O/RC:C"
+          },
+          "cwe": [
+            "CWE-601"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2026-04-14T00:00:00Z",
+  "updated": "2026-04-14T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-26-118"
+}
+

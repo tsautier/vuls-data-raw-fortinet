@@ -1,0 +1,70 @@
+{
+  "id": "FG-IR-26-113",
+  "title": "Credential disclosure in LDAP configuration web page.",
+  "summary": "An Insufficiently protected credentials vulnerability [CWE-522] in FortiSanbox and FortiSanbox PaaS GUI may allow an authenticated administrator to read LDAP server credentials via client-side inspection.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-26-113",
+      "cve": "CVE-2026-27316",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiSandbox: greater equal 4.4.0, less equal 4.4.9, fixed in [5.0.6]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.4.0",
+                    "le": "4.4.9"
+                  },
+                  "fixed_in": [
+                    "5.0.6"
+                  ]
+                },
+                {
+                  "description": "FortiSandbox: greater equal 5.0.0, less equal 5.0.5, fixed in [5.0.6]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.0.0",
+                    "le": "5.0.5"
+                  },
+                  "fixed_in": [
+                    "5.0.6"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiSandbox PaaS: greater equal 5.0.1, less equal 5.0.5, fixed in [5.0.6]",
+                  "cpe": "cpe:2.3:a:fortinet:fortisandbox:*:*:paas:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.0.1",
+                    "le": "5.0.5"
+                  },
+                  "fixed_in": [
+                    "5.0.6"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 2.5,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:L/I:N/A:N/E:P/RL:O/RC:C"
+          },
+          "cwe": [
+            "CWE-522"
+          ],
+          "impact": "Information disclosure"
+        }
+      ]
+    }
+  ],
+  "published": "2026-04-14T00:00:00Z",
+  "updated": "2026-04-14T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-26-113"
+}
+

@@ -1,0 +1,83 @@
+{
+  "id": "FG-IR-26-101",
+  "title": "2FA request can be replayed without a valid token after one successful request",
+  "summary": "An Improper authentication vulnerability [CWE-287] in FortiSOAR web GUI may allow an unauthenticated attacker to bypass authentication via replaying captured 2FA request. The attack requires being able to intercept and decrypt authentication traffic and precise timing to replay the request before token expiration.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-26-101",
+      "cve": "CVE-2026-23708",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiSOAR PaaS: greater equal 7.5.0, less equal 7.5.2, fixed in [7.5.3, 7.6.4]",
+                  "cpe": "cpe:2.3:a:fortinet:fortisoar:*:*:paas:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.5.0",
+                    "le": "7.5.2"
+                  },
+                  "fixed_in": [
+                    "7.5.3",
+                    "7.6.4"
+                  ]
+                },
+                {
+                  "description": "FortiSOAR PaaS: greater equal 7.6.0, less equal 7.6.3, fixed in [7.6.4]",
+                  "cpe": "cpe:2.3:a:fortinet:fortisoar:*:*:paas:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.6.0",
+                    "le": "7.6.3"
+                  },
+                  "fixed_in": [
+                    "7.6.4"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiSOAR on-premise: greater equal 7.5.0, less equal 7.5.2, fixed in [7.5.3, 7.6.4]",
+                  "cpe": "cpe:2.3:a:fortinet:fortisoar:*:*:on-premise:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.5.0",
+                    "le": "7.5.2"
+                  },
+                  "fixed_in": [
+                    "7.5.3",
+                    "7.6.4"
+                  ]
+                },
+                {
+                  "description": "FortiSOAR on-premise: greater equal 7.6.0, less equal 7.6.3, fixed in [7.6.4]",
+                  "cpe": "cpe:2.3:a:fortinet:fortisoar:*:*:on-premise:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.6.0",
+                    "le": "7.6.3"
+                  },
+                  "fixed_in": [
+                    "7.6.4"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 6.7,
+            "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C"
+          },
+          "cwe": [
+            "CWE-287"
+          ],
+          "impact": "Escalation of privilege"
+        }
+      ]
+    }
+  ],
+  "published": "2026-04-14T00:00:00Z",
+  "updated": "2026-04-14T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-26-101"
+}
+

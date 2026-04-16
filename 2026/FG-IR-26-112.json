@@ -1,0 +1,56 @@
+{
+  "id": "FG-IR-26-112",
+  "title": "Unauthenticated Authentication bypass and Privilege escalation in FortiSandbox",
+  "summary": "A Path Traversal vulnerability [CWE-24] in FortiSandbox JRPC API may allow an unauthenticated attacker to bypass authentication via specially crafted HTTP requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-26-112",
+      "cve": "CVE-2026-39813",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiSandbox: greater equal 4.4.0, less equal 4.4.8, fixed in [4.4.9, 5.0.6]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.4.0",
+                    "le": "4.4.8"
+                  },
+                  "fixed_in": [
+                    "4.4.9",
+                    "5.0.6"
+                  ]
+                },
+                {
+                  "description": "FortiSandbox: greater equal 5.0.0, less equal 5.0.5, fixed in [5.0.6]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.0.0",
+                    "le": "5.0.5"
+                  },
+                  "fixed_in": [
+                    "5.0.6"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 9.1,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C"
+          },
+          "cwe": [
+            "CWE-24"
+          ],
+          "impact": "Escalation of privilege"
+        }
+      ]
+    }
+  ],
+  "published": "2026-04-14T00:00:00Z",
+  "updated": "2026-04-14T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-26-112"
+}
+

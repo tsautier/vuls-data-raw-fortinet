@@ -1,0 +1,107 @@
+{
+  "id": "FG-IR-26-110",
+  "title": "Multiple Stored XSS",
+  "summary": "An Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability [CWE-79] in FortiSandbox and FortiSandbox Cloud may allow a privileged attacker to perform a stored XSS attack via crafted HTTP requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-26-110",
+      "cve": "CVE-2026-39812",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiSandbox: greater equal 4.2.1, less equal 4.2.8, fixed in [4.4.9, 5.0.6]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.2.1",
+                    "le": "4.2.8"
+                  },
+                  "fixed_in": [
+                    "4.4.9",
+                    "5.0.6"
+                  ]
+                },
+                {
+                  "description": "FortiSandbox: greater equal 4.4.0, less equal 4.4.8, fixed in [4.4.9, 5.0.6]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.4.0",
+                    "le": "4.4.8"
+                  },
+                  "fixed_in": [
+                    "4.4.9",
+                    "5.0.6"
+                  ]
+                },
+                {
+                  "description": "FortiSandbox: greater equal 5.0.0, less equal 5.0.5, fixed in [5.0.6]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.0.0",
+                    "le": "5.0.5"
+                  },
+                  "fixed_in": [
+                    "5.0.6"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiSandbox PaaS: greater equal 4.2.1, less equal 4.2.8, fixed in [4.4.9, 5.0.6]",
+                  "cpe": "cpe:2.3:a:fortinet:fortisandbox:*:*:paas:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.2.1",
+                    "le": "4.2.8"
+                  },
+                  "fixed_in": [
+                    "4.4.9",
+                    "5.0.6"
+                  ]
+                },
+                {
+                  "description": "FortiSandbox PaaS: greater equal 4.4.0, less equal 4.4.8, fixed in [4.4.9, 5.0.6]",
+                  "cpe": "cpe:2.3:a:fortinet:fortisandbox:*:*:paas:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.4.0",
+                    "le": "4.4.8"
+                  },
+                  "fixed_in": [
+                    "4.4.9",
+                    "5.0.6"
+                  ]
+                },
+                {
+                  "description": "FortiSandbox PaaS: greater equal 5.0.0, less equal 5.0.5, fixed in [5.0.6]",
+                  "cpe": "cpe:2.3:a:fortinet:fortisandbox:*:*:paas:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.0.0",
+                    "le": "5.0.5"
+                  },
+                  "fixed_in": [
+                    "5.0.6"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 4.3,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:L/I:L/A:N/E:P/RL:O/RC:C"
+          },
+          "cwe": [
+            "CWE-79"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2026-04-14T00:00:00Z",
+  "updated": "2026-04-14T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-26-110"
+}
+

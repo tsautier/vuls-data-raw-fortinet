@@ -1,0 +1,56 @@
+{
+  "id": "FG-IR-26-102",
+  "title": "Multiple SQL Injections",
+  "summary": "An Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability [CWE-89] in FortiClientEMS may allow an authenticated attacker to run arbitrary SQL queries on the database via sending crafted requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-26-102",
+      "cve": "CVE-2026-39809",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiClientEMS: greater equal 7.2.0, less equal 7.2.12, fixed in [7.2.13, 7.4.6]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient_enterprise_management_server:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.12"
+                  },
+                  "fixed_in": [
+                    "7.2.13",
+                    "7.4.6"
+                  ]
+                },
+                {
+                  "description": "FortiClientEMS: greater equal 7.4.0, less equal 7.4.5, fixed in [7.4.6]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient_enterprise_management_server:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.5"
+                  },
+                  "fixed_in": [
+                    "7.4.6"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 7.1,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:L/A:L/E:F/RL:O/RC:C"
+          },
+          "cwe": [
+            "CWE-89"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2026-04-14T00:00:00Z",
+  "updated": "2026-04-14T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-26-102"
+}
+

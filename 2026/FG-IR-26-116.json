@@ -1,0 +1,101 @@
+{
+  "id": "FG-IR-26-116",
+  "title": "Path Traversal on File Content Extraction connector",
+  "summary": "An Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability [CWE-22] in FortiSOAR may allow an authenticated remote attacker to perform path traversal attack via File Content Extraction actions.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-26-116",
+      "cve": "CVE-2026-22573",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiSOAR PaaS: greater equal 7.3.0, less equal 7.3.3",
+                  "cpe": "cpe:2.3:a:fortinet:fortisoar:*:*:paas:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.3.0",
+                    "le": "7.3.3"
+                  }
+                },
+                {
+                  "description": "FortiSOAR PaaS: greater equal 7.4.0, less equal 7.4.5",
+                  "cpe": "cpe:2.3:a:fortinet:fortisoar:*:*:paas:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.5"
+                  }
+                },
+                {
+                  "description": "FortiSOAR PaaS: greater equal 7.5.0, less equal 7.5.3",
+                  "cpe": "cpe:2.3:a:fortinet:fortisoar:*:*:paas:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.5.0",
+                    "le": "7.5.3"
+                  }
+                },
+                {
+                  "description": "FortiSOAR PaaS: greater equal 7.6.0, less equal 7.6.3",
+                  "cpe": "cpe:2.3:a:fortinet:fortisoar:*:*:paas:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.6.0",
+                    "le": "7.6.3"
+                  }
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiSOAR on-premise: greater equal 7.3.0, less equal 7.3.3",
+                  "cpe": "cpe:2.3:a:fortinet:fortisoar:*:*:on-premise:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.3.0",
+                    "le": "7.3.3"
+                  }
+                },
+                {
+                  "description": "FortiSOAR on-premise: greater equal 7.4.0, less equal 7.4.5",
+                  "cpe": "cpe:2.3:a:fortinet:fortisoar:*:*:on-premise:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.5"
+                  }
+                },
+                {
+                  "description": "FortiSOAR on-premise: greater equal 7.5.0, less equal 7.5.3",
+                  "cpe": "cpe:2.3:a:fortinet:fortisoar:*:*:on-premise:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.5.0",
+                    "le": "7.5.3"
+                  }
+                },
+                {
+                  "description": "FortiSOAR on-premise: greater equal 7.6.0, less equal 7.6.3",
+                  "cpe": "cpe:2.3:a:fortinet:fortisoar:*:*:on-premise:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.6.0",
+                    "le": "7.6.3"
+                  }
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 6.2,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N/E:H/RL:O/RC:C"
+          },
+          "cwe": [
+            "CWE-22"
+          ],
+          "impact": "Information disclosure"
+        }
+      ]
+    }
+  ],
+  "published": "2026-04-14T00:00:00Z",
+  "updated": "2026-04-14T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-26-116"
+}
+

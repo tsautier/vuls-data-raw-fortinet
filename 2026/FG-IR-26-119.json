@@ -1,0 +1,44 @@
+{
+  "id": "FG-IR-26-119",
+  "title": "SQL Injection via API",
+  "summary": "An improper neutralization of special elements used in an SQL command ('SQL Injection') vulnerability [CWE-89] in FortiDDoS-F may allow an authenticated attacker to run arbitrary SQL queries on the database by sending crafted HTTP requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-26-119",
+      "cve": "CVE-2026-39815",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiDDoS-F: greater equal 7.2.1, less equal 7.2.2, fixed in [7.2.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiddos-f:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.1",
+                    "le": "7.2.2"
+                  },
+                  "fixed_in": [
+                    "7.2.3"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 7.9,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C"
+          },
+          "cwe": [
+            "CWE-89"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2026-04-14T00:00:00Z",
+  "updated": "2026-04-14T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-26-119"
+}
+

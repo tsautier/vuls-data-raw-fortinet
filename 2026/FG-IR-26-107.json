@@ -1,0 +1,44 @@
+{
+  "id": "FG-IR-26-107",
+  "title": "Hardcoded symmetric encryption key for Postgresql",
+  "summary": "A use of hard-coded cryptographic key vulnerability [CWE 321] in FortiClientEMS may allow an attacker in possession of an encrypted dump of the database to decrypt it.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-26-107",
+      "cve": "CVE-2026-39810",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiClientEMS: greater equal 7.4.0, less equal 7.4.5, fixed in [7.4.6]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient_enterprise_management_server:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.5"
+                  },
+                  "fixed_in": [
+                    "7.4.6"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 5.2,
+            "vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:N/E:U/RL:O/RC:C"
+          },
+          "cwe": [
+            "CWE-321"
+          ],
+          "impact": "Information disclosure"
+        }
+      ]
+    }
+  ],
+  "published": "2026-04-14T00:00:00Z",
+  "updated": "2026-04-14T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-26-107"
+}
+

@@ -1,0 +1,159 @@
+{
+  "id": "FG-IR-26-103",
+  "title": "SSRF via Report template and scheduling",
+  "summary": "A Server-Side request forgery (SSRF) vulnerability [CWE-918] in FortiSOAR may allow an authenticated attacker to discover services running on local ports via crafted requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-26-103",
+      "cve": "CVE-2025-59809",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiSOAR PaaS: greater equal 7.3.0, less equal 7.3.3, fixed in [7.5.3, 7.6.3, 7.6.5]",
+                  "cpe": "cpe:2.3:a:fortinet:fortisoar:*:*:paas:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.3.0",
+                    "le": "7.3.3"
+                  },
+                  "fixed_in": [
+                    "7.5.3",
+                    "7.6.3",
+                    "7.6.5"
+                  ]
+                },
+                {
+                  "description": "FortiSOAR PaaS: greater equal 7.4.0, less equal 7.4.5, fixed in [7.5.3, 7.6.3, 7.6.5]",
+                  "cpe": "cpe:2.3:a:fortinet:fortisoar:*:*:paas:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.5"
+                  },
+                  "fixed_in": [
+                    "7.5.3",
+                    "7.6.3",
+                    "7.6.5"
+                  ]
+                },
+                {
+                  "description": "FortiSOAR PaaS: greater equal 7.5.0, less equal 7.5.2, fixed in [7.5.3, 7.6.3, 7.6.5]",
+                  "cpe": "cpe:2.3:a:fortinet:fortisoar:*:*:paas:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.5.0",
+                    "le": "7.5.2"
+                  },
+                  "fixed_in": [
+                    "7.5.3",
+                    "7.6.3",
+                    "7.6.5"
+                  ]
+                },
+                {
+                  "description": "FortiSOAR PaaS: greater equal 7.6.0, less equal 7.6.2, fixed in [7.6.3, 7.6.5]",
+                  "cpe": "cpe:2.3:a:fortinet:fortisoar:*:*:paas:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.6.0",
+                    "le": "7.6.2"
+                  },
+                  "fixed_in": [
+                    "7.6.3",
+                    "7.6.5"
+                  ]
+                },
+                {
+                  "description": "FortiSOAR PaaS: equal 7.6.4, fixed in [7.6.5]",
+                  "cpe": "cpe:2.3:a:fortinet:fortisoar:*:*:paas:*:*:*:*:*",
+                  "affected": {
+                    "eq": "7.6.4"
+                  },
+                  "fixed_in": [
+                    "7.6.5"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiSOAR on-premise: greater equal 7.3.0, less equal 7.3.3, fixed in [7.5.3, 7.6.3, 7.6.5]",
+                  "cpe": "cpe:2.3:a:fortinet:fortisoar:*:*:on-premise:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.3.0",
+                    "le": "7.3.3"
+                  },
+                  "fixed_in": [
+                    "7.5.3",
+                    "7.6.3",
+                    "7.6.5"
+                  ]
+                },
+                {
+                  "description": "FortiSOAR on-premise: greater equal 7.4.0, less equal 7.4.5, fixed in [7.5.3, 7.6.3, 7.6.5]",
+                  "cpe": "cpe:2.3:a:fortinet:fortisoar:*:*:on-premise:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.5"
+                  },
+                  "fixed_in": [
+                    "7.5.3",
+                    "7.6.3",
+                    "7.6.5"
+                  ]
+                },
+                {
+                  "description": "FortiSOAR on-premise: greater equal 7.5.0, less equal 7.5.2, fixed in [7.5.3, 7.6.3, 7.6.5]",
+                  "cpe": "cpe:2.3:a:fortinet:fortisoar:*:*:on-premise:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.5.0",
+                    "le": "7.5.2"
+                  },
+                  "fixed_in": [
+                    "7.5.3",
+                    "7.6.3",
+                    "7.6.5"
+                  ]
+                },
+                {
+                  "description": "FortiSOAR on-premise: greater equal 7.6.0, less equal 7.6.2, fixed in [7.6.3, 7.6.5]",
+                  "cpe": "cpe:2.3:a:fortinet:fortisoar:*:*:on-premise:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.6.0",
+                    "le": "7.6.2"
+                  },
+                  "fixed_in": [
+                    "7.6.3",
+                    "7.6.5"
+                  ]
+                },
+                {
+                  "description": "FortiSOAR on-premise: equal 7.6.4, fixed in [7.6.5]",
+                  "cpe": "cpe:2.3:a:fortinet:fortisoar:*:*:on-premise:*:*:*:*:*",
+                  "affected": {
+                    "eq": "7.6.4"
+                  },
+                  "fixed_in": [
+                    "7.6.5"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 4.1,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N/E:H/RL:O/RC:C"
+          },
+          "cwe": [
+            "CWE-918"
+          ],
+          "impact": "Information disclosure"
+        }
+      ]
+    }
+  ],
+  "published": "2026-04-14T00:00:00Z",
+  "updated": "2026-04-14T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-26-103"
+}
+

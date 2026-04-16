@@ -1,0 +1,106 @@
+{
+  "id": "FG-IR-26-124",
+  "title": "unauthorized backup file access",
+  "summary": "An exposure of sensitive information to an unauthorized actor vulnerability [CWE-200] in FortiNDR and FortiVoice may allow a remote authenticated attacker with at least read-only permission on system maintenance to access backup information via crafted HTTP requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-26-124",
+      "cve": "CVE-2024-23104",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiNDR: greater equal 7.0.0, less equal 7.0.7, fixed in [7.4.9, 7.6.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortindr:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.7"
+                  },
+                  "fixed_in": [
+                    "7.4.9",
+                    "7.6.1"
+                  ]
+                },
+                {
+                  "description": "FortiNDR: greater equal 7.1.0, less equal 7.1.1, fixed in [7.4.9, 7.6.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortindr:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.1.0",
+                    "le": "7.1.1"
+                  },
+                  "fixed_in": [
+                    "7.4.9",
+                    "7.6.1"
+                  ]
+                },
+                {
+                  "description": "FortiNDR: greater equal 7.2.0, less equal 7.2.5, fixed in [7.4.9, 7.6.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortindr:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.5"
+                  },
+                  "fixed_in": [
+                    "7.4.9",
+                    "7.6.1"
+                  ]
+                },
+                {
+                  "description": "FortiNDR: greater equal 7.4.0, less equal 7.4.8, fixed in [7.4.9, 7.6.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortindr:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.8"
+                  },
+                  "fixed_in": [
+                    "7.4.9",
+                    "7.6.1"
+                  ]
+                },
+                {
+                  "description": "FortiNDR: equal 7.6.0, fixed in [7.6.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortindr:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "7.6.0"
+                  },
+                  "fixed_in": [
+                    "7.6.1"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiVoice: greater equal 7.0.0, less equal 7.0.1, fixed in [7.0.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortivoice:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.1"
+                  },
+                  "fixed_in": [
+                    "7.0.2"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 5.4,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N/E:P/RL:O/RC:C"
+          },
+          "cwe": [
+            "CWE-200"
+          ],
+          "impact": "Information disclosure"
+        }
+      ]
+    }
+  ],
+  "published": "2026-04-14T00:00:00Z",
+  "updated": "2026-04-14T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-26-124"
+}
+
