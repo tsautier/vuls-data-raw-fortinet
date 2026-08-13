@@ -1,0 +1,97 @@
+{
+  "id": "FG-IR-26-158",
+  "title": "Broken access control in the RADIUS type admin group",
+  "summary": "An Improper Authentication vulnerability [CWE-287] in the FortiWeb Remote Radius Type Admin Authentication configured with specific, non-default settings may allow a remote unauthenticated attacker to login into the Fortiweb GUI/CLI with a random username and password",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-26-158",
+      "cve": "CVE-2026-26035",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiWeb: greater equal 7.2.0, less equal 7.2.12, fixed in [7.2.13, 7.4.12, 7.6.7, 8.0.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.12"
+                  },
+                  "fixed_in": [
+                    "7.2.13",
+                    "7.4.12",
+                    "7.6.7",
+                    "8.0.3"
+                  ]
+                },
+                {
+                  "description": "FortiWeb: greater equal 7.4.0, less equal 7.4.11, fixed in [7.4.12, 7.6.7, 8.0.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.11"
+                  },
+                  "fixed_in": [
+                    "7.4.12",
+                    "7.6.7",
+                    "8.0.3"
+                  ]
+                },
+                {
+                  "description": "FortiWeb: greater equal 7.6.0, less equal 7.6.6, fixed in [7.6.7, 8.0.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.6.0",
+                    "le": "7.6.6"
+                  },
+                  "fixed_in": [
+                    "7.6.7",
+                    "8.0.3"
+                  ]
+                },
+                {
+                  "description": "FortiWeb: greater equal 8.0.0, less equal 8.0.2, fixed in [8.0.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "8.0.0",
+                    "le": "8.0.2"
+                  },
+                  "fixed_in": [
+                    "8.0.3"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 8.8,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C"
+          },
+          "cwe": [
+            "CWE-287"
+          ],
+          "impact": "Improper access control"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "description": "Broken access control in the RADIUS type admin group",
+      "url": "https://fortiguard.fortinet.com/psirt/FG-IR-26-158"
+    },
+    {
+      "description": "https://docs.fortinet.com/document/fortiweb/8.0.2/cli-reference/810797/system-admin ",
+      "url": "https://docs.fortinet.com/document/fortiweb/8.0.2/cli-reference/810797/system-admin "
+    },
+    {
+      "description": "https://docs.fortinet.com/document/fortiweb/8.0.3/administration-guide/286471/administrators",
+      "url": "https://docs.fortinet.com/document/fortiweb/8.0.3/administration-guide/286471/administrators"
+    }
+  ],
+  "published": "2026-08-12T00:00:00Z",
+  "updated": "2026-08-12T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-26-158"
+}
+

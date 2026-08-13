@@ -1,0 +1,76 @@
+{
+  "id": "FG-IR-26-162",
+  "title": "UI DoS attack",
+  "summary": "An Allocation of Resources Without Limits or Throttling vulnerability [CWE-770] in FortiOS may allow an unauthenticated attacker to perform a slow HTTP DoS attack on the web interface via crafted HTTP requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-26-162",
+      "cve": "CVE-2026-71408",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 7.2.0, less than 7.3.0, fixed in [7.6.7]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "lt": "7.3.0"
+                  },
+                  "fixed_in": [
+                    "7.6.7"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 7.4.0, less than 7.5.0, fixed in [7.6.7]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "lt": "7.5.0"
+                  },
+                  "fixed_in": [
+                    "7.6.7"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 7.6.0, less equal 7.6.6, fixed in [7.6.7]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.6.0",
+                    "le": "7.6.6"
+                  },
+                  "fixed_in": [
+                    "7.6.7"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 5,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L/E:P/RL:O/RC:C"
+          },
+          "cwe": [
+            "CWE-770"
+          ],
+          "impact": "Denial of service"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "description": "UI DoS attack",
+      "url": "https://fortiguard.fortinet.com/psirt/FG-IR-26-162"
+    },
+    {
+      "description": "https://docs.fortinet.com/document/fortigate/8.0.0/administration-guide/637888/dos-protection",
+      "url": "https://docs.fortinet.com/document/fortigate/8.0.0/administration-guide/637888/dos-protection"
+    }
+  ],
+  "published": "2026-08-12T00:00:00Z",
+  "updated": "2026-08-12T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-26-162"
+}
+
