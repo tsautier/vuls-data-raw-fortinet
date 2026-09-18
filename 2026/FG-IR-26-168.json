@@ -1,0 +1,55 @@
+{
+  "id": "FG-IR-26-168",
+  "title": "Improper Authentication of FortiPAM Server",
+  "summary": "An improper authentication vulnerability [CWE-287] in the Fortinet Privileged Access Agent Chrome Extension may allow a remote unauthenticated attacker to proxy a user's browser traffic through attacker controlled servers if the user visits a malicious website.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-26-168",
+      "cve": "CVE-2026-84388",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiPAM Chrome Extension: greater equal 7.4.0, less than 7.5.0, fixed in [8.0.1.123]",
+                  "cpe": "cpe:2.3:a:fortinet:fortipam_chrome_extension:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "lt": "7.5.0"
+                  },
+                  "fixed_in": [
+                    "8.0.1.123"
+                  ]
+                },
+                {
+                  "description": "FortiPAM Chrome Extension: greater equal 8.0.0, less than 8.0.1.123, fixed in [8.0.1.123]",
+                  "cpe": "cpe:2.3:a:fortinet:fortipam_chrome_extension:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "8.0.0",
+                    "lt": "8.0.1.123"
+                  },
+                  "fixed_in": [
+                    "8.0.1.123"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 9.1,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:L/E:P/RL:U/RC:C"
+          },
+          "cwe": [
+            "CWE-287"
+          ],
+          "impact": "Information disclosure"
+        }
+      ]
+    }
+  ],
+  "published": "2026-09-08T00:00:00Z",
+  "updated": "2026-09-08T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-26-168"
+}
+

@@ -1,0 +1,55 @@
+{
+  "id": "FG-IR-26-165",
+  "title": "Arbitrary process termination from exposed minifilter communication port",
+  "summary": "An Unverified Ownership Vulnerability [CWE-283] in FortiClient Windows fortimon3 driver may allow an authenticated attacker to terminate arbitrary processes via an exposed minifilter communication port.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-26-165",
+      "cve": "CVE-2026-84386",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiClient for Windows: greater equal 7.2.0, less than 7.3.0, fixed in [7.4.8]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:windows:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "lt": "7.3.0"
+                  },
+                  "fixed_in": [
+                    "7.4.8"
+                  ]
+                },
+                {
+                  "description": "FortiClient for Windows: greater equal 7.4.0, less equal 7.4.7, fixed in [7.4.8]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:windows:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.7"
+                  },
+                  "fixed_in": [
+                    "7.4.8"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 4.7,
+            "vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:N/I:L/A:H/E:P/RL:O/RC:C"
+          },
+          "cwe": [
+            "CWE-283"
+          ],
+          "impact": "Improper access control"
+        }
+      ]
+    }
+  ],
+  "published": "2026-09-08T00:00:00Z",
+  "updated": "2026-09-08T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-26-165"
+}
+
